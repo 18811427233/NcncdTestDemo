@@ -5,105 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/btn_blood_sugar"
+    tools:context="cn.miao.ncncd.demo.vm.MainActivity">
+    <!--标题-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="上传血糖数据"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
+        android:layout_height="@dimen/dimen_50"
+        android:background="@android:color/white">
 
-    <Button
-        android:id="@+id/btn_blood_pressure"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="上传血压数据"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_100"
+            android:layout_marginRight="@dimen/dimen_100"
+            android:gravity="center"
+            android:text="健康信息交互系统"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_20"
+            />
 
-    <Button
-        android:id="@+id/btn_health"
+    </RelativeLayout>
+    <!--测试-->
+    <ListView
+        android:id="@+id/lv_test"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="上传健康数据"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
-
-    <Button
-        android:id="@+id/btn_sport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="上传运动数据"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
-
-    <Button
-        android:id="@+id/btn_sleep"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="上传睡眠数据"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
-
-    <Button
-        android:id="@+id/btn_blood_oxygen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="上传血氧数据"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
-
-    <Button
-        android:id="@+id/btn_heart_rate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="上传心率数据"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
-
-    <Button
-        android:id="@+id/btn_temperature"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="上传体温数据"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
-
-    <Button
-        android:id="@+id/btn_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_button_background"
-        android:text="去完善信息"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        />
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

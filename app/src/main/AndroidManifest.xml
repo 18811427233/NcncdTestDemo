@@ -3,15 +3,15 @@
           package="cn.miao.ncncdtestdemo">
 
     <!-- 网络 -->
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <!-- 读写 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
 
     <application
         android:allowBackup="true"
@@ -20,15 +20,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        
-        <activity android:name="cn.miao.ncncd.vm.NcncdRegisterActivity"/>
+
+        <activity
+            android:name=".HealthActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".BloodSugarActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".BloodPressureActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".BloodOxygenActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SportActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SleepActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".HeartRateActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".TemperatureActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>
