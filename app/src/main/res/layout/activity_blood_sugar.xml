@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="cn.miao.ncncd.demo.vm.HealthActivity">
+    tools:context=".HealthActivity">
 
     <!--标题-->
     <RelativeLayout
@@ -21,7 +21,7 @@
             android:layout_marginStart="@dimen/dimen_20"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
-            android:src="@drawable/src_title_close"
+            android:src="@mipmap/src_title_close"
             />
 
         <TextView

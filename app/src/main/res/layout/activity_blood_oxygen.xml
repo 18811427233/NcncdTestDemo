@@ -21,7 +21,7 @@
             android:layout_marginStart="@dimen/dimen_20"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
-            android:src="@drawable/src_title_close"
+            android:src="@mipmap/src_title_close"
             />
 
         <TextView

@@ -64,6 +64,15 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <meta-data
+            android:name="appKey"
+            android:value="1"
+            />
+        <meta-data
+            android:name="appSecret"
+            android:value="1"
+            />
+
     </application>
 
 </manifest>
