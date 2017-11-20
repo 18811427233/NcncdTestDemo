@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.miao.ncncd.api.SleepApi;
-import cn.miao.ncncd.api.handle.ApiCallBack;
+import cn.miao.ncncd.api.handle.ApiHandle;
 import cn.miao.ncncd.http.entity.Sleep;
 import cn.miao.ncncd.util.ToastUtil;
 
@@ -142,7 +142,7 @@ public class SleepActivity extends AppCompatActivity {
                     return;
                 }
 
-                SleepApi.uploadSleep(SleepActivity.this, "18811427233", sleeps, new ApiCallBack() {
+                SleepApi.uploadSleep(SleepActivity.this, "18811427233", sleeps, new ApiHandle() {
                     @Override
                     public void onStart() {
                         //显示ProgressDialog

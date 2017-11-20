@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.miao.ncncd.api.BloodOxygenApi;
-import cn.miao.ncncd.api.handle.ApiCallBack;
+import cn.miao.ncncd.api.handle.ApiHandle;
 import cn.miao.ncncd.http.entity.BloodOxygen;
 import cn.miao.ncncd.util.ToastUtil;
 
@@ -136,7 +136,7 @@ public class BloodOxygenActivity extends AppCompatActivity {
                     return;
                 }
 
-                BloodOxygenApi.uploadBloodOxygen(BloodOxygenActivity.this, "18811427233", bloodOxygens, new ApiCallBack() {
+                BloodOxygenApi.uploadBloodOxygen(BloodOxygenActivity.this, "18811427233", bloodOxygens, new ApiHandle() {
                     @Override
                     public void onStart() {
                         //显示ProgressDialog

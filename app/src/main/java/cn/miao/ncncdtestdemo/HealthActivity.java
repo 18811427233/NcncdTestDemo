@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.miao.ncncd.api.HealthApi;
-import cn.miao.ncncd.api.handle.ApiCallBack;
+import cn.miao.ncncd.api.handle.ApiHandle;
 import cn.miao.ncncd.http.entity.Health;
 import cn.miao.ncncd.util.ToastUtil;
 
@@ -147,7 +147,7 @@ public class HealthActivity extends AppCompatActivity {
                     return;
                 }
 
-                HealthApi.uploadHealth(HealthActivity.this, "18811427233", healths, new ApiCallBack() {
+                HealthApi.uploadHealth(HealthActivity.this, "18811427233", healths, new ApiHandle() {
                     @Override
                     public void onStart() {
                         //显示ProgressDialog

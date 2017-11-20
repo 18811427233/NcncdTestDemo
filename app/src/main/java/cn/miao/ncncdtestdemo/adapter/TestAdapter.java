@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import java.util.List;
-
 import cn.miao.ncncdtestdemo.R;
 
 
@@ -19,10 +17,10 @@ import cn.miao.ncncdtestdemo.R;
 public class TestAdapter extends BaseAdapter {
 
     private LayoutInflater mInflater;
-    private List<String> datas;
+    private String[] datas;
 
     /*构造函数*/
-    public TestAdapter(Context context, List<String> datas) {
+    public TestAdapter(Context context, String[] datas) {
         this.mInflater = LayoutInflater.from(context);
         this.datas = datas;
     }
@@ -30,12 +28,12 @@ public class TestAdapter extends BaseAdapter {
     @Override
     public int getCount() {
 
-        return datas.size();
+        return datas.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return datas.get(position);
+        return datas[position];
     }
 
     @Override
@@ -52,7 +50,7 @@ public class TestAdapter extends BaseAdapter {
 
         /*得到各个控件的对象*/
         TextView name = (TextView) convertView.findViewById(R.id.tv_name);
-        name.setText(datas.get(position));
+        name.setText(datas[position]);
 
         return convertView;
     }

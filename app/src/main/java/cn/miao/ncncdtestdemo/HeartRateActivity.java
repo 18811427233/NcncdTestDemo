@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.miao.ncncd.api.HeartRateApi;
-import cn.miao.ncncd.api.handle.ApiCallBack;
+import cn.miao.ncncd.api.handle.ApiHandle;
 import cn.miao.ncncd.http.entity.HeartRate;
 import cn.miao.ncncd.util.ToastUtil;
 
@@ -135,7 +135,7 @@ public class HeartRateActivity extends AppCompatActivity {
                     return;
                 }
 
-                HeartRateApi.uploadHeartRate(HeartRateActivity.this, "18811427233", heartRates, new ApiCallBack() {
+                HeartRateApi.uploadHeartRate(HeartRateActivity.this, "18811427233", heartRates, new ApiHandle() {
                     @Override
                     public void onStart() {
                         //显示ProgressDialog

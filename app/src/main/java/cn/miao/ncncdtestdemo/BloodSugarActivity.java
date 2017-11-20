@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.miao.ncncd.api.BloodSugarApi;
-import cn.miao.ncncd.api.handle.ApiCallBack;
+import cn.miao.ncncd.api.handle.ApiHandle;
 import cn.miao.ncncd.http.entity.BloodSugar;
 import cn.miao.ncncd.util.ToastUtil;
 
@@ -125,7 +125,7 @@ public class BloodSugarActivity extends AppCompatActivity {
                     return;
                 }
 
-                BloodSugarApi.uploadBloodSugar(BloodSugarActivity.this, "18811427233", bloodSugars, new ApiCallBack() {
+                BloodSugarApi.uploadBloodSugar(BloodSugarActivity.this, "18811427233", bloodSugars, new ApiHandle() {
                     @Override
                     public void onStart() {
                         //显示ProgressDialog

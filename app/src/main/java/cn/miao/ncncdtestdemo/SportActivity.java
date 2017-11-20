@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.miao.ncncd.api.SportApi;
-import cn.miao.ncncd.api.handle.ApiCallBack;
+import cn.miao.ncncd.api.handle.ApiHandle;
 import cn.miao.ncncd.http.entity.Sport;
 import cn.miao.ncncd.util.ToastUtil;
 
@@ -127,7 +127,7 @@ public class SportActivity extends AppCompatActivity {
                     return;
                 }
 
-                SportApi.uploadSport(SportActivity.this, "18811427233", sports, new ApiCallBack() {
+                SportApi.uploadSport(SportActivity.this, "18811427233", sports, new ApiHandle() {
                     @Override
                     public void onStart() {
                         //显示ProgressDialog

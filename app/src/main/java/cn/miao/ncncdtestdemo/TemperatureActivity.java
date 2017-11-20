@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.miao.ncncd.api.TemperatureApi;
-import cn.miao.ncncd.api.handle.ApiCallBack;
+import cn.miao.ncncd.api.handle.ApiHandle;
 import cn.miao.ncncd.http.entity.Temperature;
 import cn.miao.ncncd.util.ToastUtil;
 
@@ -134,7 +134,7 @@ public class TemperatureActivity extends AppCompatActivity {
                     return;
                 }
 
-                TemperatureApi.uploadTemperature(TemperatureActivity.this, "18811427233", temperatures, new ApiCallBack() {
+                TemperatureApi.uploadTemperature(TemperatureActivity.this, "18811427233", temperatures, new ApiHandle() {
                     @Override
                     public void onStart() {
                         //显示ProgressDialog

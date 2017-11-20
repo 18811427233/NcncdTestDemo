@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.miao.ncncd.api.BloodPressureApi;
-import cn.miao.ncncd.api.handle.ApiCallBack;
+import cn.miao.ncncd.api.handle.ApiHandle;
 import cn.miao.ncncd.http.entity.BloodPressure;
 import cn.miao.ncncd.util.ToastUtil;
 
@@ -121,7 +121,7 @@ public class BloodPressureActivity extends AppCompatActivity {
                     return;
                 }
 
-                BloodPressureApi.uploadBloodPressure(BloodPressureActivity.this, "18811427233", pressures, new ApiCallBack() {
+                BloodPressureApi.uploadBloodPressure(BloodPressureActivity.this, "18811427233", pressures, new ApiHandle() {
                     @Override
                     public void onStart() {
                         //显示ProgressDialog
