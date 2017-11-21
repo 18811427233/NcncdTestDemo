@@ -35,9 +35,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     //
-    compile 'com.squareup.okhttp3:okhttp:3.9.0'
-    compile 'com.alibaba:fastjson:1.1.54.android'
+    implementation 'cn.miao.ncncd:ncncd:1.0.0'
 
-    //ncncd-sdk-aar
-    compile ':ncncd-release@aar'
 }

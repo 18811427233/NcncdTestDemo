@@ -162,12 +162,14 @@ public class BloodOxygenActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(String response) {
-                        ToastUtil.show(BloodOxygenActivity.this, response);
+                    public void onFailure(int errNo, String errMsg) {
+                        ToastUtil.show(BloodOxygenActivity.this, errMsg);
                     }
 
                     @Override
                     public void onNetError() {
+                        ToastUtil.show(BloodOxygenActivity.this, "请求异常，请检查您的网络并稍后再试");
+
                     }
 
                     @Override

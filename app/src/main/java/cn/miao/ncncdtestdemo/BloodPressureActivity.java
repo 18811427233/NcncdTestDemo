@@ -146,13 +146,15 @@ public class BloodPressureActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(String response) {
-                        ToastUtil.show(BloodPressureActivity.this, response);
+                    public void onFailure(int errNo, String errMsg) {
+                        ToastUtil.show(BloodPressureActivity.this, errMsg);
 
                     }
 
                     @Override
                     public void onNetError() {
+                        ToastUtil.show(BloodPressureActivity.this, "请求异常，请检查您的网络并稍后再试");
+
                     }
 
                     @Override

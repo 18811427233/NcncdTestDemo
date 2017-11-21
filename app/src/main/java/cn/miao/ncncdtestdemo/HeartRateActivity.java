@@ -161,12 +161,14 @@ public class HeartRateActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(String response) {
-                        ToastUtil.show(HeartRateActivity.this, response);
+                    public void onFailure(int errNo, String errMsg) {
+                        ToastUtil.show(HeartRateActivity.this, errMsg);
                     }
 
                     @Override
                     public void onNetError() {
+                        ToastUtil.show(HeartRateActivity.this, "请求异常，请检查您的网络并稍后再试");
+
                     }
 
                     @Override

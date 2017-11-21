@@ -148,13 +148,15 @@ public class BloodSugarActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(String response) {
+                    public void onFailure(int errNo, String errMsg) {
 
-                        ToastUtil.show(BloodSugarActivity.this, response);
+                        ToastUtil.show(BloodSugarActivity.this, errMsg);
                     }
 
                     @Override
                     public void onNetError() {
+                        ToastUtil.show(BloodSugarActivity.this, "请求异常，请检查您的网络并稍后再试");
+
                     }
 
                     @Override
