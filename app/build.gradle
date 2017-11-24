@@ -27,6 +27,6 @@ dependencies {
     androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     //
-    compile 'cn.miao.ncncd:ncncd:1.0.1'
+    compile 'cn.miao.ncncd:ncncd:1.0.2'
 
 }
