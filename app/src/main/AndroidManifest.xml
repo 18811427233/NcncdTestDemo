@@ -3,15 +3,8 @@
           package="cn.miao.ncncdtestdemo">
 
     <!-- 网络 -->
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <!-- 读写 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
 
     <application
         android:allowBackup="true"
@@ -31,38 +24,45 @@
             </intent-filter>
         </activity>
 
+        <!--上传健康界面-->
         <activity
             android:name=".HealthActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
+
+        <!--上传血糖界面-->
         <activity
             android:name=".BloodSugarActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
+
+        <!--上传血压界面-->
         <activity
             android:name=".BloodPressureActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
+
+        <!--上传血氧界面-->
         <activity
             android:name=".BloodOxygenActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
+
+        <!--上传运动界面-->
         <activity
             android:name=".SportActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
+
+        <!--上传睡眠界面-->
         <activity
             android:name=".SleepActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
+
+        <!--上传心率界面-->
         <activity
             android:name=".HeartRateActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
+
+        <!--上传体温界面-->
         <activity
             android:name=".TemperatureActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
 
         <!--设置appKey、appSecret-->
         <meta-data

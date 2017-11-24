@@ -11,7 +11,7 @@ import cn.miao.ncncdtestdemo.R;
 
 
 /**
- * 测试列表adapter
+ * 首页列表adapter
  * Created by zhangzhuang on 17/11/16.
  */
 public class TestAdapter extends BaseAdapter {
@@ -48,8 +48,8 @@ public class TestAdapter extends BaseAdapter {
             convertView = mInflater.inflate(R.layout.adapter_test, null);
         }
 
-        /*得到各个控件的对象*/
         TextView name = (TextView) convertView.findViewById(R.id.tv_name);
+
         name.setText(datas[position]);
 
         return convertView;

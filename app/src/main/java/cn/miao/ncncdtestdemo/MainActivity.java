@@ -15,9 +15,11 @@ import cn.miao.ncncdtestdemo.adapter.TestAdapter;
  */
 public class MainActivity extends AppCompatActivity {
 
+    /*列表*/
     private ListView lvTest;
     private TestAdapter testAdapter;
 
+    /*列表数据*/
     private String[] datas = {"上传血糖数据", "上传健康数据", "上传血压数据", "上传运动数据", "上传睡眠数据", "上传血氧数据", "上传心率数据", "上传体温数据", "上传用户数据"};
     private Class[] activitys = new Class[]{BloodSugarActivity.class, HealthActivity.class, BloodPressureActivity.class, SportActivity.class, SleepActivity.class, BloodOxygenActivity.class, HeartRateActivity.class, TemperatureActivity.class, NcncdRegisterActivity.class};
 
